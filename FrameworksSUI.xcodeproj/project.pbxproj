@@ -11,6 +11,8 @@
 		560BC9DB2B47F1D300D78876 /* FramworksButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560BC9DA2B47F1D300D78876 /* FramworksButton.swift */; };
 		560BC9DD2B47F5CB00D78876 /* FramworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560BC9DC2B47F5CB00D78876 /* FramworkGridViewModel.swift */; };
 		560BC9DF2B48122F00D78876 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560BC9DE2B48122F00D78876 /* SafariView.swift */; };
+		560BC9E12B4816F200D78876 /* FrimeworkTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560BC9E02B4816F200D78876 /* FrimeworkTitleView.swift */; };
+		560BC9E32B48193C00D78876 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560BC9E22B48193C00D78876 /* XDismissButton.swift */; };
 		56E7ACD72B30A72900821208 /* FrameworksSUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E7ACD62B30A72900821208 /* FrameworksSUIApp.swift */; };
 		56E7ACDB2B30A72A00821208 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56E7ACDA2B30A72A00821208 /* Assets.xcassets */; };
 		56E7ACDE2B30A72A00821208 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56E7ACDD2B30A72A00821208 /* Preview Assets.xcassets */; };
@@ -23,6 +25,8 @@
 		560BC9DA2B47F1D300D78876 /* FramworksButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FramworksButton.swift; sourceTree = "<group>"; };
 		560BC9DC2B47F5CB00D78876 /* FramworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FramworkGridViewModel.swift; sourceTree = "<group>"; };
 		560BC9DE2B48122F00D78876 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		560BC9E02B4816F200D78876 /* FrimeworkTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrimeworkTitleView.swift; sourceTree = "<group>"; };
+		560BC9E22B48193C00D78876 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 		56E7ACD32B30A72900821208 /* FrameworksSUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrameworksSUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56E7ACD62B30A72900821208 /* FrameworksSUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworksSUIApp.swift; sourceTree = "<group>"; };
 		56E7ACDA2B30A72A00821208 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -42,6 +46,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		560BC9E42B481AAA00D78876 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				560BC9E52B481AB600D78876 /* FrameworkGridView */,
+				560BC9E62B481AEF00D78876 /* FrameworkDetailView */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		560BC9E52B481AB600D78876 /* FrameworkGridView */ = {
+			isa = PBXGroup;
+			children = (
+				56E7ACE62B30AA2B00821208 /* FrameworkGridView.swift */,
+				560BC9DC2B47F5CB00D78876 /* FramworkGridViewModel.swift */,
+			);
+			path = FrameworkGridView;
+			sourceTree = "<group>";
+		};
+		560BC9E62B481AEF00D78876 /* FrameworkDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				560BC9D82B47EBD000D78876 /* FrameworkDetailView.swift */,
+			);
+			path = FrameworkDetailView;
+			sourceTree = "<group>";
+		};
+		560BC9E72B481B2900D78876 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				56E7ACE42B30A78400821208 /* Framework.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		560BC9E82B481B4200D78876 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				560BC9EA2B481B6300D78876 /* Views */,
+				560BC9E92B481B4800D78876 /* Buttons */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		560BC9E92B481B4800D78876 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				560BC9E22B48193C00D78876 /* XDismissButton.swift */,
+				560BC9DA2B47F1D300D78876 /* FramworksButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		560BC9EA2B481B6300D78876 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				560BC9E02B4816F200D78876 /* FrimeworkTitleView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		560BC9EB2B481B8900D78876 /* UIKit Components */ = {
+			isa = PBXGroup;
+			children = (
+				560BC9DE2B48122F00D78876 /* SafariView.swift */,
+			);
+			path = "UIKit Components";
+			sourceTree = "<group>";
+		};
 		56E7ACCA2B30A72900821208 = {
 			isa = PBXGroup;
 			children = (
@@ -62,12 +134,10 @@
 			isa = PBXGroup;
 			children = (
 				56E7ACD62B30A72900821208 /* FrameworksSUIApp.swift */,
-				56E7ACE42B30A78400821208 /* Framework.swift */,
-				56E7ACE62B30AA2B00821208 /* FrameworkGridView.swift */,
-				560BC9DE2B48122F00D78876 /* SafariView.swift */,
-				560BC9DC2B47F5CB00D78876 /* FramworkGridViewModel.swift */,
-				560BC9D82B47EBD000D78876 /* FrameworkDetailView.swift */,
-				560BC9DA2B47F1D300D78876 /* FramworksButton.swift */,
+				560BC9EB2B481B8900D78876 /* UIKit Components */,
+				560BC9E82B481B4200D78876 /* Views */,
+				560BC9E72B481B2900D78876 /* Models */,
+				560BC9E42B481AAA00D78876 /* Screens */,
 				56E7ACDA2B30A72A00821208 /* Assets.xcassets */,
 				56E7ACDC2B30A72A00821208 /* Preview Content */,
 			);
@@ -155,9 +225,11 @@
 				560BC9DB2B47F1D300D78876 /* FramworksButton.swift in Sources */,
 				560BC9D92B47EBD000D78876 /* FrameworkDetailView.swift in Sources */,
 				56E7ACE52B30A78400821208 /* Framework.swift in Sources */,
+				560BC9E32B48193C00D78876 /* XDismissButton.swift in Sources */,
 				560BC9DD2B47F5CB00D78876 /* FramworkGridViewModel.swift in Sources */,
 				56E7ACD72B30A72900821208 /* FrameworksSUIApp.swift in Sources */,
 				56E7ACE72B30AA2B00821208 /* FrameworkGridView.swift in Sources */,
+				560BC9E12B4816F200D78876 /* FrimeworkTitleView.swift in Sources */,
 				560BC9DF2B48122F00D78876 /* SafariView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

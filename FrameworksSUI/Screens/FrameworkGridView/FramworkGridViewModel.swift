@@ -13,4 +13,9 @@ final class FramworkGridViewModel: ObservableObject {
     var selectedFramwork: Framework? {
         didSet { isShowingDetailsView = true }
     }
+    
+    let columns: [GridItem] = [GridItem(.flexible()),
+                               GridItem(.flexible()),
+                               GridItem(.flexible())]
+    
 }
