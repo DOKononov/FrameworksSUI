@@ -8,32 +8,21 @@
 import SwiftUI
 
 struct FrameworkGridView: View {
-    
-    @StateObject var viewModel = FramworkGridViewModel()
-
     var body: some View {
-        
-        NavigationView {
-            ScrollView {
-                LazyVGrid(columns: viewModel.columns) {
-                    ForEach(MockData.frameworks) { framework in
+        NavigationStack {
+            List {
+                ForEach(MockData.frameworks) { framework in
+                    NavigationLink(
+                        destination: FrameworkDetailView(
+                            framework: framework)) {
                         FrameworkTitleView(framework: framework)
-                            .onTapGesture {
-                                viewModel.selectedFramwork = framework
-                            }
                     }
                 }
             }
             .navigationTitle("🍎 Frameworks")
-            .sheet(isPresented: $viewModel.isShowingDetailsView) {
-                if let framework = viewModel.selectedFramwork {
-                    FrameworkDetailView(
-                        framework: framework,
-                        isShowingDetailsView: $viewModel.isShowingDetailsView)
-                }
-            }
         }
-
+        .accentColor(Color(.label))
+        
     }
 }
 
